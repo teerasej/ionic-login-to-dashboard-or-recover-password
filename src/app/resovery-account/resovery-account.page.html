@@ -4,14 +4,12 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding >
-  <div class="layout">
+<ion-content padding>
     <ion-item>
       <ion-label position="stacked">Username</ion-label>
-      <ion-input placeholder="Username to recovery"></ion-input>
+      <ion-input placeholder="Username to recovery" [(ngModel)]="accountId"></ion-input>
     </ion-item>
-    <ion-button expand="block" (click)="onClick()">
+    <ion-button expand="block" (click)="sendRecoveryEmail(accountId)">
       Send Email
     </ion-button>
-  </div>
 </ion-content>
