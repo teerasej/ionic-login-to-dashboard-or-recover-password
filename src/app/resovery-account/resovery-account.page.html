@@ -1,9 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>resovery-account</ion-title>
+    <ion-title>Recovery Account</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding >
+  <div class="layout">
+    <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input placeholder="Username to recovery"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="onClick()">
+      Send Email
+    </ion-button>
+  </div>
 </ion-content>
