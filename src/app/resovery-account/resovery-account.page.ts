@@ -12,4 +12,8 @@ export class ResoveryAccountPage implements OnInit {
   ngOnInit() {
   }
 
+  sendRecoveryEmail( accountId ){
+    alert('Email sent to ' + accountId);
+  }
+
 }
