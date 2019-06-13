@@ -30,6 +30,7 @@ export class HomePage {
 
   recoverPassword() {
     console.log('Recovering password...');
+    this.nav.navigateForward('/recovery-account');
   }
 
 }
